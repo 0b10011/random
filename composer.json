@@ -1,0 +1,33 @@
+{
+	"name": "bfrohs/random-hex",
+	"description": "Cryptographically secure random hex string generation.",
+	"keywords": [
+		"csprng",
+		"random",
+		"pseudorandom",
+		"hex"
+	],
+	"license": "MIT",
+	"type": "library",
+	"authors": [
+		{
+			"name": "Brandon Frohs",
+			"email": "bfrohs@gmail.com",
+			"homepage": "https://www.brandonfrohs.com/"
+		}
+	],
+	"support": {
+		"issues": "https://github.com/bfrohs/random_hex/issues",
+		"email": "bfrohs@gmail.com",
+		"source":   "https://github.com/bfrohs/random_hex"
+	},
+	"require": {
+		"php": ">=5.2.0",
+		"paragonie/random_compat": "^1.2"
+	},
+	"autoload": {
+		"psr-4": {
+			"bfrohs\\RandomHex\\": "src"
+		}
+	}
+}
