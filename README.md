@@ -1,23 +1,17 @@
-# RandomHex
+# Random
 
-Cryptographically secure random hex string generation.
+Cryptographically secure random data generation.
 
 ## Usage
 
-```php
-// PHP 5.6+
-use bfrohs\RandomHex\RandomHex::generate as random_hex;
-
-$string = random_hex(32);
-```
+### Hex string
 
 ```php
-// PHP 5.5 and lower
-use bfrohs\RandomHex\RandomHex;
+use bfrohs\Random\Random;
 
-$string = RandomHex::generate(32);
+$string = Random::generateHex(32);
+
+var_dump($string);
 ```
-
-Example `var_dump($string)` output:
 
 > string(32) "112321ec33df8ebc9234ac02dbae4277"

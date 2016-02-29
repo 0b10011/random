@@ -1,6 +1,6 @@
 {
-	"name": "bfrohs/random-hex",
-	"description": "Cryptographically secure random hex string generation.",
+	"name": "bfrohs/random",
+	"description": "Cryptographically secure random data generation.",
 	"keywords": [
 		"csprng",
 		"random",
@@ -17,9 +17,9 @@
 		}
 	],
 	"support": {
-		"issues": "https://github.com/bfrohs/random_hex/issues",
+		"issues": "https://github.com/bfrohs/random/issues",
 		"email": "bfrohs@gmail.com",
-		"source":   "https://github.com/bfrohs/random_hex"
+		"source":   "https://github.com/bfrohs/random"
 	},
 	"require": {
 		"php": ">=5.2.0",
@@ -27,7 +27,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"bfrohs\\RandomHex\\": "src"
+			"bfrohs\\Random\\": "src"
 		}
 	}
 }

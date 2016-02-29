@@ -1,12 +1,12 @@
 <?php
 
-namespace bfrohs\RandomHex;
+namespace bfrohs\Random;
 
 class InvalidLengthException extends \InvalidArgumentException {}
 class RandomBytesPolyfillException extends \Exception {}
 class InsecureServerException extends \Exception {}
 
-class RandomHex {
+class Random {
 	/**
 	 * Generates a cryptographically secure random hex string.
 	 * @author Brandon Frohs <bfrohs@gmail.com>
@@ -14,14 +14,14 @@ class RandomHex {
 	 * @return string Returns hex string that is `$length` characters long
 	 * and cryptographically secure.
 	 * Generated using `bin2hex()` and `random_bytes()`.
-	 * @throws bfrohs\RandomHex\InvalidLengthException
+	 * @throws bfrohs\Random\InvalidLengthException
 	 * if `$length` is not a positive integer.
-	 * @throws bfrohs\RandomHex\RandomBytesPolyfillException
+	 * @throws bfrohs\Random\RandomBytesPolyfillException
 	 * if the `random_bytes()` polyfill fails for an unknown reason.
-	 * @throws bfrohs\RandomHex\InsecureServerException
+	 * @throws bfrohs\Random\InsecureServerException
 	 * if the server can't generate cryptographically secure bytes.
 	 */
-	public static function generate ($length) {
+	public static function generateHex ($length) {
 		if (!is_int($length) || $length < 1) {
 			throw new InvalidLengthException(
 				"Provided length `".serialize($length)."` must be a positive integer"
